@@ -1,0 +1,98 @@
+
+\documentclass[10pt,a4paper]{altacv}
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=11cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+
+\usepackage{xcolor}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\colorlet{heading}{magenta}
+\colorlet{accent}{purple}
+\colorlet{emphasis}{darkgray}
+\colorlet{body}{gray}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+
+\name{\emph{Isabele Gavazzi}}
+  \tagline{Estudante}
+
+
+\photo{4cm}{Isa}
+\personalinfo{
+  \email{Isabele23.ov.ufrj.br}   \phone{+55 24 999212772} 
+  
+  \location{Rio de Janeiro , Brasil } \quad{Idade: 19  }
+  
+
+}
+
+\begin{adjustwidth}{}{-7cm}
+\makecvheader
+\end{adjustwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{\emph{PRETENSÃO PROFISSIONAL}}
+\cvevent{Carreira na Astronomia}{Disponível para viagens}{UFRJ}{Rio de Janeiro}
+
+\begin{itemize}
+\item Forte interesse na Área da Cosmologia e da Astrobiologia.
+\item Pretensão Salarial: Entre 15 à 20 mil reais.
+\item Interesse em ser Pesquisadora.
+\item Habilidade em transmitir conhecimento e disponibilidade para pesquisar e lecionar simultaneamente.
+\end{itemize}
+\bigskip
+
+\cvsection{\emph{INFORMAÇÕES ADICIONAIS}}
+\cvevent{Trabalhos Voluntários}{Salesiano}{}{}
+
+{Como estudante do Colégio Salesiano, participei de diversos trabalhos voluntários:}
+
+
+\begin{itemize}
+\item  Doação de brinquedos e roupas ao orfanato de Resende. \\     \item Arrecadação de Alimentos ao lar de Idosos de Resende.\\
+\item A doação e entrega de sopas e cobertores a pessoas em situação de rua.\\
+\end{itemize}
+\bigskip
+
+
+
+\cvsection{\emph{FORMAÇÃO}}
+\cvevent{}{Astronomia }
+{2021 -- Em curso} {Universidade Federal do Rio de Janeiro}
+\cvevent{} {Ensino Médio}
+{2019 -- 2020}{Colégio Verbo Divino (Barra Mansa/RJ)}
+\cvevent{}{Ensino Fundamental ao 1° Ano}
+{ Até 2018 }{Instituto São José Salesiano }
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=7cm]{ufrjisa.png}
+    \label{fig:enter-label}
+\end{figure}
+
+\end{document}
